@@ -306,6 +306,7 @@ export default {
     },
     onDayClick(day) {
       this.picker.handleDayClick(day, this);
+      console.log("onDayClick(day)")
       // Re-emit event
       this.$emit('dayclick', day);
     },
